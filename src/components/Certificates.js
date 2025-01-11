@@ -21,7 +21,7 @@ const certificates = [
     description: "In-depth study of advanced networking concepts and technologies",
     image: cert2Image,
     link: "https://www.credly.com/badges/1f943c4f-a52e-4ee1-a489-1a10094cec0b/linked_in_profile",
-    issuer: "CompTIA",
+    issuer: "Cisco Networking Academy",
     date: "November 26, 2024",
     skills: ["Network Security", "Wireless Networks", "Cloud Networking", "Network Troubleshooting"],
   },

@@ -8,7 +8,7 @@ import { BrowserRouter as Router, Route, Switch } from "react-router-dom";
 import { Helmet } from "react-helmet";
 import 'bootstrap/dist/css/bootstrap.min.css';
 import './App.css';
-import ContactMe from "./components/ContactMe";
+// import ContactMe from "./components/ContactMe";
 
 // Lazy load components
 const Projects = lazy(() => import("./components/Projects"));
@@ -156,7 +156,7 @@ const App = () => {
 
         {/* Footer */}
         <Footer />
-        <ContactMe />
+        
       </div>
     </Router>
   );

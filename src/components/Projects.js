@@ -3,7 +3,7 @@ import { Card, Button, Carousel, Modal } from "react-bootstrap";
 import { motion } from "framer-motion";
 import project1Image from "../assets/images/project1.JPG";
 import project2Image from "../assets/images/project2.JPG";
-import { FaInstagram, FaFacebookF, FaLinkedinIn, FaTiktok } from "react-icons/fa";
+import { FaInstagram, FaTiktok, FaFacebook, FaLinkedin } from "react-icons/fa"; // Corrected import
 import "./Projects.css";
 
 const projects = [
@@ -47,7 +47,6 @@ const PortfolioCarousel = () => {
     setShowDetailsModal(true);
   };
 
-  // shareOnSocialMedia function
   const shareOnSocialMedia = (platform, projectLink) => {
     let shareUrl = "";
     switch (platform) {
@@ -114,35 +113,34 @@ const PortfolioCarousel = () => {
         ))}
       </Carousel>
 
-      {/* Social Media Share Buttons */}
       <div className="social-share-buttons">
         <Button
           variant="outline-primary"
           className="social-share-button"
           onClick={() => shareOnSocialMedia("instagram", selectedProject?.link)}
         >
-          <FaInstagram size={20} />
+          <FaInstagram size={17} />
         </Button>
         <Button
           variant="outline-primary"
           className="social-share-button"
           onClick={() => shareOnSocialMedia("tiktok", selectedProject?.link)}
         >
-          <FaTiktok size={20} />
+          <FaTiktok size={17} />
         </Button>
         <Button
           variant="outline-primary"
           className="social-share-button"
           onClick={() => shareOnSocialMedia("facebook", selectedProject?.link)}
         >
-          <FaFacebookF size={20} />
+          <FaFacebook size={17} />
         </Button>
         <Button
           variant="outline-primary"
           className="social-share-button"
           onClick={() => shareOnSocialMedia("linkedin", selectedProject?.link)}
         >
-          <FaLinkedinIn size={20} />
+          <FaLinkedin size={17} />
         </Button>
       </div>
 
@@ -159,7 +157,6 @@ const PortfolioCarousel = () => {
         ))}
       </div>
 
-      {/* Image Modal */}
       <Modal show={showImageModal} onHide={() => setShowImageModal(false)} size="lg" centered>
         <Modal.Header closeButton>
           <Modal.Title>{selectedProject?.title}</Modal.Title>
@@ -169,7 +166,6 @@ const PortfolioCarousel = () => {
         </Modal.Body>
       </Modal>
 
-      {/* Details Modal */}
       <Modal show={showDetailsModal} onHide={() => setShowDetailsModal(false)} size="lg" centered>
         <Modal.Header closeButton>
           <Modal.Title>{selectedProject?.title}</Modal.Title>

@@ -5,7 +5,7 @@ const Hero = () => {
   return (
     <div className="hero">
       <h1>Welcome to My Portfolio</h1>
-      <p>Frontend Developer | Passionate Coder | Problem Solver</p>
+      <p>Frontend Developer | Technical Support Engineer | Network Technician</p>
     </div>
   );
 };
